@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 320" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="magBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="50%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#0066FF"/>
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background card -->
+  <rect width="540" height="320" rx="16" fill="#0B132B" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Left Platform Edge -->
+  <rect x="50" y="80" width="180" height="150" rx="8" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+  <rect x="210" y="110" width="20" height="90" rx="4" fill="#FF6B00" filter="url(#neonGlow)"/>
+  <text x="70" y="140" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12" font-weight="700">STAGE DECK A</text>
+  <text x="70" y="165" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="800">Neodymium Core</text>
+  <text x="70" y="190" fill="#FF8C00" font-family="'Inter', sans-serif" font-size="12" font-weight="600">North (+) Polarized</text>
+
+  <!-- Magnetic Attraction Waves -->
+  <path d="M235,130 C255,130 285,130 305,130" stroke="#FF6B00" stroke-width="3" stroke-dasharray="4,4"/>
+  <path d="M235,155 C255,155 285,155 305,155" stroke="#00D2FF" stroke-width="4"/>
+  <path d="M235,180 C255,180 285,180 305,180" stroke="#0066FF" stroke-width="3" stroke-dasharray="4,4"/>
+
+  <!-- Center Magnetism Pulse Indicator -->
+  <circle cx="270" cy="155" r="22" fill="#0F172A" stroke="url(#magBeam)" stroke-width="2.5"/>
+  <text x="270" y="160" text-anchor="middle" fill="#00D2FF" font-family="'Inter', sans-serif" font-size="16" font-weight="900">⚡</text>
+
+  <!-- Right Platform Edge -->
+  <rect x="310" y="80" width="180" height="150" rx="8" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+  <rect x="310" y="110" width="20" height="90" rx="4" fill="#0066FF" filter="url(#neonGlow)"/>
+  <text x="345" y="140" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12" font-weight="700">STAGE DECK B</text>
+  <text x="345" y="165" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="800">Neodymium Core</text>
+  <text x="345" y="190" fill="#00D2FF" font-family="'Inter', sans-serif" font-size="12" font-weight="600">South (-) Polarized</text>
+
+  <!-- Footer Banner: No Locks, No Keys -->
+  <rect x="50" y="250" width="440" height="42" rx="21" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+  <text x="270" y="276" text-anchor="middle" fill="#10B981" font-family="'Inter', sans-serif" font-size="13" font-weight="800" letter-spacing="0.5">✓ 100% ZERO-LOCK CONNECTION • ZERO MECHANICAL WEAR</text>
+</svg>

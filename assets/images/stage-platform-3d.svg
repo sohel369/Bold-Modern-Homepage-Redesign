@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Isometric Stage Deck Gradients -->
+    <linearGradient id="deckTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="deckTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="metalLeg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="50%" stop-color="#64748B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="magGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow below stage -->
+  <polygon points="300,380 490,280 300,190 110,280" fill="#000000" opacity="0.4" filter="url(#softShadow)"/>
+
+  <!-- Riser Spider Legs (Left, Right, Front, Back) -->
+  <!-- Back Leg -->
+  <line x1="300" y1="180" x2="300" y2="290" stroke="url(#metalLeg)" stroke-width="12" stroke-linecap="round"/>
+  <!-- Left Leg -->
+  <line x1="120" y1="270" x2="120" y2="370" stroke="url(#metalLeg)" stroke-width="12" stroke-linecap="round"/>
+  <!-- Right Leg -->
+  <line x1="480" y1="270" x2="480" y2="370" stroke="url(#metalLeg)" stroke-width="12" stroke-linecap="round"/>
+  <!-- Center/Front Leg -->
+  <line x1="300" y1="360" x2="300" y2="440" stroke="url(#metalLeg)" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Cross Bracing (Spider Riser Mechanism) -->
+  <line x1="120" y1="330" x2="300" y2="400" stroke="#475569" stroke-width="4"/>
+  <line x1="480" y1="330" x2="300" y2="400" stroke="#475569" stroke-width="4"/>
+  <line x1="120" y1="330" x2="300" y2="240" stroke="#475569" stroke-width="4"/>
+  <line x1="480" y1="330" x2="300" y2="240" stroke="#475569" stroke-width="4"/>
+
+  <!-- Platform 3D Solid -->
+  <!-- Left Thickness -->
+  <polygon points="110,260 300,350 300,365 110,275" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <!-- Right Thickness -->
+  <polygon points="300,350 490,260 490,275 300,365" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  
+  <!-- High-Grip Stage Deck Top Surface -->
+  <polygon points="300,170 490,260 300,350 110,260" fill="url(#deckTop)" stroke="#38BDF8" stroke-width="1.5"/>
+
+  <!-- Bold Accent Edge Bevel (Sheffield Orange) -->
+  <polyline points="110,260 300,350 490,260" stroke="url(#deckTrim)" stroke-width="3" fill="none"/>
+
+  <!-- Modern Hex Grid Texture on Stage Surface -->
+  <g stroke="#38BDF8" stroke-opacity="0.12" stroke-width="1">
+    <line x1="205" y1="215" x2="395" y2="305"/>
+    <line x1="250" y1="195" x2="440" y2="285"/>
+    <line x1="160" y1="235" x2="350" y2="325"/>
+    <line x1="205" y1="305" x2="395" y2="215"/>
+    <line x1="250" y1="325" x2="440" y2="235"/>
+    <line x1="160" y1="285" x2="350" y2="195"/>
+  </g>
+
+  <!-- Magnetic Corner Pulsing Nodes -->
+  <!-- Left Corner -->
+  <circle cx="110" cy="260" r="10" fill="#FF6B00" filter="url(#magGlow)"/>
+  <circle cx="110" cy="260" r="5" fill="#FFF"/>
+  <!-- Front Corner -->
+  <circle cx="300" cy="350" r="12" fill="#0066FF" filter="url(#magGlow)"/>
+  <circle cx="300" cy="350" r="6" fill="#FFF"/>
+  <!-- Right Corner -->
+  <circle cx="490" cy="260" r="10" fill="#FF6B00" filter="url(#magGlow)"/>
+  <circle cx="490" cy="260" r="5" fill="#FFF"/>
+  <!-- Back Corner -->
+  <circle cx="300" cy="170" r="8" fill="#00D2FF" filter="url(#magGlow)"/>
+  <circle cx="300" cy="170" r="4" fill="#FFF"/>
+
+  <!-- Floating Callout Pills -->
+  <!-- Pill 1: 100% Magnetic -->
+  <g transform="translate(60, 160)">
+    <rect width="160" height="38" rx="19" fill="#0F172A" stroke="#FF6B00" stroke-width="1.5" opacity="0.95"/>
+    <circle cx="20" cy="19" r="6" fill="#FF6B00"/>
+    <text x="35" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="700">100% MAGNETIC</text>
+  </g>
+
+  <!-- Pill 2: 7.8kg Ultralight -->
+  <g transform="translate(390, 140)">
+    <rect width="150" height="38" rx="19" fill="#0F172A" stroke="#00D2FF" stroke-width="1.5" opacity="0.95"/>
+    <circle cx="20" cy="19" r="6" fill="#00D2FF"/>
+    <text x="35" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="700">7.8 KG ULTRALIGHT</text>
+  </g>
+
+  <!-- Pill 3: 1500kg Load Tested -->
+  <g transform="translate(360, 370)">
+    <rect width="180" height="38" rx="19" fill="#0F172A" stroke="#10B981" stroke-width="1.5" opacity="0.95"/>
+    <circle cx="20" cy="19" r="6" fill="#10B981"/>
+    <text x="35" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="700">1500 KG LOAD CAPACITY</text>
+  </g>
+</svg>

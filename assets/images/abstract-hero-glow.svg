@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF6B00" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#FF6B00" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0066FF" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#00D2FF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cyberGrid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0066FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="250" cy="220" r="280" fill="url(#glow1)"/>
+  <circle cx="700" cy="380" r="320" fill="url(#glow2)"/>
+
+  <!-- Geometric Abstract Tech Curves -->
+  <path d="M-100,300 C200,100 450,550 950,200" stroke="url(#cyberGrid)" stroke-width="2" fill="none" stroke-dasharray="6,6"/>
+  <path d="M-50,450 C300,250 600,600 1000,350" stroke="#00D2FF" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+  
+  <!-- Modern Abstract Hex Poly-Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.07" stroke-width="1">
+    <line x1="100" y1="100" x2="150" y2="130"/>
+    <line x1="150" y1="130" x2="150" y2="190"/>
+    <line x1="150" y1="190" x2="100" y2="220"/>
+    <line x1="100" y1="220" x2="50" y2="190"/>
+    <line x1="50" y1="190" x2="50" y2="130"/>
+    <line x1="50" y1="130" x2="100" y2="100"/>
+    
+    <line x1="800" y1="180" x2="850" y2="210"/>
+    <line x1="850" y1="210" x2="850" y2="270"/>
+    <line x1="850" y1="270" x2="800" y2="300"/>
+    <line x1="800" y1="300" x2="750" y2="270"/>
+    <line x1="750" y1="270" x2="750" y2="210"/>
+    <line x1="750" y1="210" x2="800" y2="180"/>
+  </g>
+</svg>
